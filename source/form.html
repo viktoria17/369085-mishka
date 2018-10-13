@@ -10,16 +10,18 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин «Мишка»">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть Меню</button>
+        <button class="main-nav__toggle  main-nav__toggle--open  main-nav__toggle--close" type="button"></button>
       </nav>
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Вязание на заказ</h1>
+      <div class="page-main__title-wrapper">
+          <h1 class="page-main__title">Вязание на заказ</h1>
+      </div>
 
       <section class="form-inner">
         <p class="form-inner__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
@@ -84,7 +86,8 @@
             <legend class="form__title  form__title--separator">Тел</legend>
 
             <div class="form__input-container">
-              <input class="form__input-text  form__input-icon" type="tel" id="phone" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+              <span class="form__input-icon form__input-icon--phone"></span>
+              <input class="form__input-text" type="tel" id="phone" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
                 pattern="^[0-9-+s()]*$" required>
             </div>
           </fieldset>
@@ -93,7 +96,8 @@
             <legend class="form__title  form__title--separator">E-mail</legend>
 
             <div class="form__input-container">
-              <input class="form__input-text  form__input-icon" type="email" id="email" name="email" placeholder="Ваш Email*"
+              <span class="form__input-icon form__input-icon--email"></span>
+              <input class="form__input-text" type="email" id="email" name="email" placeholder="Ваш Email*"
                 required>
             </div>
           </fieldset>
@@ -118,19 +122,18 @@
         <div class="page-footer__bottom-block">
           <div class="page-footer__social  social">
             <ul class="social__list">
-              <li class="social__product">
-                <a class="social__link  social__link--instagram" href="https://www.instagram.com/htmlacademy"
-                  target="_blank" rel="nofollow noopener">Мы в Инстаграме</a>
+              <li class="social__item social__item--instagram">
+                <a class="social__link" href="https://www.instagram.com/htmlacademy" target="_blank"
+                  rel="nofollow noopener"></a>
               </li>
 
-              <li class="social__product">
-                <a class="social__link  social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank"
-                  rel="nofollow noopener">Мы в Фейсбуке</a>
+              <li class="social__item social__item--facebook">
+                <a class="social__link" href="https://www.facebook.com/htmlacademy" target="_blank"
+                  rel="nofollow noopener"></a>
               </li>
 
-              <li class="social__product">
-                <a class="social__link  social__link--twitter" href="https://twitter.com/htmlacademy" target="_blank" rel="nofollow noopener">
-                  Мы в Твиттере
+              <li class="social__item social__item--twitter">
+                <a class="social__link" href="https://twitter.com/htmlacademy" target="_blank" rel="nofollow noopener">
                 </a>
               </li>
             </ul>
@@ -138,9 +141,9 @@
 
           <div class="page-footer__copyright copyright">
             <b class="copyright__text">Разработано</b>
-            <a class="copyright__icon" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
-              HTML Academy
-            </a>
+            <div class="copyright__icon">
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener"></a>
+            </div>
           </div>
         </div>
       </div>

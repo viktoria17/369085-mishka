@@ -1,0 +1,13 @@
+@import "helpers.scss";
+
+.copyright {
+
+  &__icon {
+      @include icon(center);
+
+      height: 34px;
+      width: 27px;
+      background-image: url("../img/htmlacademy.svg");
+    }
+
+}

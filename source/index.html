@@ -10,31 +10,37 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин «Мишка»">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть Меню</button>
+        <button class="main-nav__toggle  main-nav__toggle--open  main-nav__toggle--close" type="button"></button>
       </nav>
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
+      <div class="page-main__background  page-main__background--image">
+        <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
+     </div>
 
       <section class="catalog-sections">
         <h2 class="visually-hidden">Разделы каталога</h2>
 
-        <a class="catalog-section" href="catalog.html">
-          <h3 class="catalog-section__title">Предметы интерьера</h3>
-          <img cclass="catalog-section__image  catalog-section__image--interior" src="http://placehold.it/86==40x62"
-            width="40" height="62" alt="Предметы интерьера">
-        </a>
+        <div class="catalog-section catalog-section--light-bg">
+          <a class="catalog-section__link" href="catalog.html">
+            <h3 class="catalog-section__title">Предметы интерьера</h3>
+            <img class="catalog-section__image  catalog-section__image--interior" src="img/icon-interior.svg"
+              width="40" height="62" alt="Предметы интерьера">
+          </a>
+        </div>
 
-        <a class="catalog-section" href="catalog.html">
-          <h3 class="catalog-section__title">Детские игрушки</h3>
-          <img cclass="catalog-section__image  catalog-section__image--toy" src="http://placehold.it/86==60x60" width="60"
-            height="60" alt="Детские игрушки">
-        </a>
+        <div class="catalog-section catalog-section--dark-bg">
+          <a class="catalog-section__link" href="catalog.html">
+            <h3 class="catalog-section__title">Детские игрушки</h3>
+            <img cclass="catalog-section__image  catalog-section__image--toy" src="img/icon-toy.svg" width="60"
+              height="60" alt="Детские игрушки">
+          </a>
+        </div>
       </section>
 
       <section class="popular-item">
@@ -65,7 +71,7 @@
             </table>
           </div>
 
-          <img class="popular-item__image" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки»">
+          <img class="popular-item__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки»">
 
           <footer class="popular-item__footer">
             <p class="popular-item__price">Цена: 990 руб.</p>
@@ -158,8 +164,12 @@
               </div>
             </blockquote>
 
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+            <button class="reviews__button" type="button">
+              <div class="reviews__button-icon reviews__button-icon--prev"></div>
+            </button>
+            <button class="reviews__button" type="button">
+              <div class="reviews__button-icon reviews__button-icon--next"></div>
+            </button>
             <button class="reviews__write  button" type="button">Написать</button>
           </div>
         </div>
@@ -186,7 +196,7 @@
         </div>
 
         <div class="page-footer__map  map">
-          <img class="map__image" src="http://placehold.it/320x457" width="320" height="457" alt="Карта">
+          <img class="map__image" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта">
         </div>
 
         <div class="page-footer__write">
@@ -196,19 +206,18 @@
         <div class="page-footer__bottom-block">
           <div class="page-footer__social  social">
             <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link  social__link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank"
-                  rel="nofollow noopener">Мы в Инстаграме</a>
+              <li class="social__item social__item--instagram">
+                <a class="social__link" href="https://www.instagram.com/htmlacademy" target="_blank"
+                  rel="nofollow noopener"></a>
               </li>
 
-              <li class="social__item">
-                <a class="social__link  social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank"
-                  rel="nofollow noopener">Мы в Фейсбуке</a>
+              <li class="social__item social__item--facebook">
+                <a class="social__link" href="https://www.facebook.com/htmlacademy" target="_blank"
+                  rel="nofollow noopener"></a>
               </li>
 
-              <li class="social__item">
-                <a class="social__link  social__link--twitter" href="https://twitter.com/htmlacademy" target="_blank" rel="nofollow noopener">
-                  Мы в Твиттере
+              <li class="social__item social__item--twitter">
+                <a class="social__link" href="https://twitter.com/htmlacademy" target="_blank" rel="nofollow noopener">
                 </a>
               </li>
             </ul>
@@ -216,9 +225,9 @@
 
           <div class="page-footer__copyright copyright">
             <b class="copyright__text">Разработано</b>
-            <a class="copyright__icon" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
-              HTML Academy
-            </a>
+            <div class="copyright__icon">
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener"></a>
+            </div>
           </div>
         </div>
       </div>

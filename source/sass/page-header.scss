@@ -1,0 +1,26 @@
+@import "helpers.scss";
+
+.page-header {
+
+  .main-nav {
+
+    &__toggle {
+      @include icon(center);
+
+      &--close {
+        background-image: url("../img/icon-menu-close.svg");
+        height: 20px;
+        width: 21px;
+      }
+
+      &--open {
+        background-image: url("../img/icon-menu-open.svg");
+        height: 14px;
+        width: 20px;
+      }
+
+    }
+
+  }
+
+}

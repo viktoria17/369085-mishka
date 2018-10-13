@@ -10,22 +10,24 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин «Мишка»">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть Меню</button>
+        <button class="main-nav__toggle  main-nav__toggle--open  main-nav__toggle--close" type="button"></button>
       </nav>
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Каталог товаров</h1>
+      <div class="page-main__title-wrapper">
+        <h1 class="page-main__title">Каталог товаров</h1>
+      </div>
 
       <section class="catalog">
         <div class="catalog__wrapper">
           <div class="catalog__product product">
             <a class="product__link" href="#">
-              <img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
+              <img class="product__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
             </a>
 
             <div class="product__info-wrapper">
@@ -38,14 +40,14 @@
 
               <div class="product__add-to-cart-block">
                 <h2 class="product__price">1 200 руб.</h2>
-                <div class="product__cart-icon">Корзина</div>
+                <div class="product__cart-icon"></div>
               </div>
             </div>
           </div>
 
           <div class="catalog__product product">
             <a class="product__link" href="#">
-              <img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья">
+              <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
             </a>
 
             <div class="product__info-wrapper">
@@ -58,14 +60,14 @@
 
               <div class="product__add-to-cart-block">
                 <h2 class="product__price">690 руб.</h2>
-                <div class="product__cart-icon">Корзина</div>
+                <div class="product__cart-icon"></div>
               </div>
             </div>
           </div>
 
           <div class="catalog__product  product">
             <a class="product__link" href="#">
-              <img class="product__image" src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для игрушек">
+              <img class="product__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Корзинка для игрушек">
             </a>
 
             <div class="product__info-wrapper">
@@ -78,7 +80,7 @@
 
               <div class="product__add-to-cart-block">
                 <h2 class="product__price">1 500 руб.</h2>
-                <div class="product__cart-icon">Корзина</div>
+                <div class="product__cart-icon"></div>
               </div>
             </div>
           </div>
@@ -88,13 +90,14 @@
       <article class="post">
         <div class="post__wrapper">
           <header class="post__header">
-            <img class="post__video-icon" src="http://placehold.it/32x22" width="32" height="22" alt="Видео">
+            <div class="post__video-icon"></div>
             <h2 class="post__title">Процесс производства</h2>
           </header>
 
           <section class="post__video">
-            <video controls preload="metadata" width="260" height="150"></video>
-            <button class="post__video-btn" type="button">Кнопка видео</button>
+            <div class="post__video-image">
+              <button class="post__video-btn" type="button"></button>
+            </div>
           </section>
 
           <section class="post__text-wrapper">
@@ -112,19 +115,18 @@
         <div class="page-footer__bottom-block">
           <div class="page-footer__social  social">
             <ul class="social__list">
-              <li class="social__product">
-                <a class="social__link  social__link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank"
-                  rel="nofollow noopener">Мы в Инстаграме</a>
+              <li class="social__item social__item--instagram">
+                <a class="social__link" href="https://www.instagram.com/htmlacademy" target="_blank"
+                  rel="nofollow noopener"></a>
               </li>
 
-              <li class="social__product">
-                <a class="social__link  social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank"
-                  rel="nofollow noopener">Мы в Фейсбуке</a>
+              <li class="social__item social__item--facebook">
+                <a class="social__link" href="https://www.facebook.com/htmlacademy" target="_blank"
+                  rel="nofollow noopener"></a>
               </li>
 
-              <li class="social__product">
-                <a class="social__link  social__link--twitter" href="https://twitter.com/htmlacademy" target="_blank" rel="nofollow noopener">
-                  Мы в Твиттере
+              <li class="social__item social__item--twitter">
+                <a class="social__link" href="https://twitter.com/htmlacademy" target="_blank" rel="nofollow noopener">
                 </a>
               </li>
             </ul>
@@ -132,9 +134,9 @@
 
           <div class="page-footer__copyright copyright">
             <b class="copyright__text">Разработано</b>
-            <a class="copyright__icon" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
-              HTML Academy
-            </a>
+            <div class="copyright__icon">
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener"></a>
+            </div>
           </div>
         </div>
       </div>

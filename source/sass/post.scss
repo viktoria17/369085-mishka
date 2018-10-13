@@ -1,0 +1,29 @@
+@import "helpers.scss";
+
+.post {
+
+  &__video-icon {
+    @include icon(center);
+
+    background-image: url("../img/icon-video.svg");
+    height: 22px;
+    width: 32px;
+  }
+
+  &__video-image {
+    @include icon(center);
+
+    background-image: url("../img/video-mobile@1x.jpg");
+    height: 150px;
+    width: 260px;
+  }
+
+  &__video-btn {
+    @include icon(center);
+
+    background-image: url("../img/icon-play.svg");
+    height: 77px;
+    width: 101px;
+  }
+
+}

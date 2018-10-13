@@ -1,0 +1,13 @@
+@import "colors.scss";
+
+.catalog-section {
+
+  &--light-bg {
+    background-color: $downy;
+  }
+
+  &--dark-bg {
+    background-color: $puerto-rico;
+  }
+  
+}
