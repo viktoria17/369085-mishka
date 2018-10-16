@@ -2,7 +2,6 @@
 @import "typography.scss";
 
 .post {
-
   &__wrapper {
     @include horizontal-paddings;
   }
@@ -34,5 +33,4 @@
   &__text {
     @include text-extra-small;
   }
-
 }

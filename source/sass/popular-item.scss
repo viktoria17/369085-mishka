@@ -3,7 +3,6 @@
 @import "helpers.scss";
 
 .popular-item {
-
   &__wrapper {
     @include horizontal-paddings;
   }
@@ -37,5 +36,4 @@
   &--light-bg {
     background-color: $green-downy;
   }
-
 }

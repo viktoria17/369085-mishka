@@ -1,7 +1,6 @@
 @import "helpers.scss";
 
 .social {
-
   &__item {
     @include icon(center);
 
@@ -22,7 +21,5 @@
       width: 23px;
       background-image: url("../img/icon-twitter.svg");
     }
-
   }
-  
 }

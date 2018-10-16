@@ -2,7 +2,6 @@
 @import "typography.scss";
 
 .reviews {
-
   &__wrapper {
     @include horizontal-paddings;
   }
@@ -46,7 +45,5 @@
     &--next {
       background-image: url("../img/icon-right-arrow.svg");
     }
-
   }
-
 }

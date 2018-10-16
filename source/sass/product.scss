@@ -2,7 +2,6 @@
 @import "typography.scss";
 
 .product {
-
   &__name {
     @include text-medium--bold;
 
@@ -33,5 +32,4 @@
     height: 19px;
     width: 20px;
   }
-
 }

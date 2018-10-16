@@ -2,7 +2,6 @@
 @import "typography.scss";
 
 .copyright {
-
   &__text {
     @include text-large--bold;
 
@@ -11,11 +10,10 @@
   }
 
   &__icon {
-      @include icon(center);
+    @include icon(center);
 
-      height: 34px;
-      width: 27px;
-      background-image: url("../img/htmlacademy.svg");
-    }
-
+    height: 34px;
+    width: 27px;
+    background-image: url("../img/htmlacademy.svg");
+  }
 }

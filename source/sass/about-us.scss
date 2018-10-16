@@ -3,7 +3,6 @@
 @import "typography.scss";
 
 .about-us {
-
   &__wrapper {
     @include horizontal-paddings;
   }
@@ -59,7 +58,5 @@
       height: 32px;
       width: 33px;
     }
-
   }
-
 }
