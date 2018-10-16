@@ -1,5 +1,18 @@
 @import "colors.scss";
+@import "helpers.scss";
 
 .page-footer {
-  background-color: $white-ghost;
+
+  &__contacts-wrapper,
+  &__write-wrapper,
+  &__bottom-block-wrapper {
+    @include horizontal-paddings;
+  }
+
+  &__bottom-block-wrapper {
+    @include vertical-paddings;
+
+    background-color: $white-ghost;
+  }
+
 }

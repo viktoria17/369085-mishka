@@ -1,11 +1,14 @@
 @import "colors.scss";
 @import "typography.scss";
+@import "helpers.scss";
 
 .catalog-section {
+  @include horizontal-paddings;
 
   &__title {
     @include text-large--bold;
 
+    margin-top: 0;
     line-height: 1.26;
     color: $white-snow;
   }

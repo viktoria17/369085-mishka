@@ -1,6 +1,8 @@
 @import "helpers.scss";
 
 .page-header {
+  @include horizontal-paddings;
+  @include vertical-paddings;
 
   .main-nav {
 

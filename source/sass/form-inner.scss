@@ -1,6 +1,8 @@
 @import "typography.scss";
+@import "helpers.scss";
 
 .form-inner {
+  @include horizontal-paddings;
 
   &__text {
     @include text-extra-small;

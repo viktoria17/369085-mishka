@@ -3,6 +3,10 @@
 
 .post {
 
+  &__wrapper {
+    @include horizontal-paddings;
+  }
+
   &__video-icon {
     @include icon(center);
 

@@ -4,6 +4,10 @@
 
 .about-us {
 
+  &__wrapper {
+    @include horizontal-paddings;
+  }
+
   &__title {
     @include section-title;
 

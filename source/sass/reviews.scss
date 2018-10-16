@@ -3,6 +3,14 @@
 
 .reviews {
 
+  &__wrapper {
+    @include horizontal-paddings;
+  }
+
+  &__item {
+    margin-left: 0;
+  }
+
   &__title {
     @include section-title;
   }

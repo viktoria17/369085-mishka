@@ -1,7 +1,12 @@
 @import "colors.scss";
 @import "typography.scss";
+@import "helpers.scss";
 
 .popular-item {
+
+  &__wrapper {
+    @include horizontal-paddings;
+  }
 
   &__title {
     @include section-title;

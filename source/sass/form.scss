@@ -2,6 +2,7 @@
 @import "typography.scss";
 
 .form {
+  @include horizontal-paddings;
 
   &__title {
     @include title-green;
