@@ -3,12 +3,19 @@
 
 .page-main {
 
+  &__title {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.11;
+    color: $black;
+  }
+
   &__title-wrapper {
-    background-color: $ghost-white;
+    background-color: $white-ghost;
   }
 
   &__background {
-    background-color: $ghost-white;
+    background-color: $white-ghost;
     height: 177px;
 
     &--image {

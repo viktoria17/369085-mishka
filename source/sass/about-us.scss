@@ -1,7 +1,21 @@
 @import "colors.scss";
 @import "helpers.scss";
+@import "typography.scss";
 
 .about-us {
+
+  &__title {
+    @include section-title;
+
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    @include text-medium--bold;
+
+    line-height: 1.18;
+    color: $black;
+  }
 
   &__icon {
     @include icon(center);

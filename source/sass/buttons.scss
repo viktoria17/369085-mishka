@@ -1,0 +1,9 @@
+@import "colors.scss";
+@import "typography.scss";
+
+.button {
+  @include text-medium--bold;
+
+  line-height: 1.18;
+  text-transform: uppercase;
+}

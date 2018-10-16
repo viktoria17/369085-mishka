@@ -1,13 +1,21 @@
 @import "colors.scss";
+@import "typography.scss";
 
 .catalog-section {
 
+  &__title {
+    @include text-large--bold;
+
+    line-height: 1.26;
+    color: $white-snow;
+  }
+
   &--light-bg {
-    background-color: $downy;
+    background-color: $green-downy;
   }
 
   &--dark-bg {
-    background-color: $puerto-rico;
+    background-color: $green-puerto-rico;
   }
-  
+
 }

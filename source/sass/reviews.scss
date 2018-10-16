@@ -1,6 +1,29 @@
 @import "helpers.scss";
+@import "typography.scss";
 
 .reviews {
+
+  &__title {
+    @include section-title;
+  }
+
+  &__text {
+    @include text-small;
+
+    line-height: 2;
+  }
+
+  &__author-name {
+    @include text-medium--bold;
+
+    line-height: 1.41;
+    color: $black;
+    font-style: normal;
+  }
+
+  &__author-instagram {
+    line-height: 1.76;
+  }
 
   &__button-icon {
     @include icon(center);

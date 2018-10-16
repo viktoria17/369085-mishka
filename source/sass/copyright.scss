@@ -1,6 +1,14 @@
 @import "helpers.scss";
+@import "typography.scss";
 
 .copyright {
+
+  &__text {
+    @include text-large--bold;
+
+    line-height: 0.95;
+    color: $black;
+  }
 
   &__icon {
       @include icon(center);

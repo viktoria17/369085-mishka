@@ -1,6 +1,30 @@
 @import "helpers.scss";
+@import "typography.scss";
 
 .product {
+
+  &__name {
+    @include text-medium--bold;
+
+    line-height: 1.41;
+  }
+
+  &__link {
+    color: $black;
+    text-decoration: none;
+  }
+
+  &__size {
+    @include text-extra-small;
+  }
+
+  &__price {
+    @include text-small;
+
+    line-height: 1.6;
+    font-weight: 700;
+    color: $black;
+  }
 
   &__cart-icon {
     @include icon(center);

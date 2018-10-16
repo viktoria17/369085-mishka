@@ -1,0 +1,9 @@
+@import "typography.scss";
+
+.form-inner {
+
+  &__text {
+    @include text-extra-small;
+  }
+
+}

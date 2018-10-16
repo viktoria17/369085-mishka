@@ -1,4 +1,5 @@
 @import "helpers.scss";
+@import "typography.scss";
 
 .post {
 
@@ -24,6 +25,10 @@
     background-image: url("../img/icon-play.svg");
     height: 77px;
     width: 101px;
+  }
+
+  &__text {
+    @include text-extra-small;
   }
 
 }

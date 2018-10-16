@@ -1,6 +1,43 @@
 @import "helpers.scss";
+@import "typography.scss";
 
 .form {
+
+  &__title {
+    @include title-green;
+
+    line-height: 0.94;
+  }
+
+  &__label {
+    @include text-medium--bold;
+
+    line-height: 1.06;
+    color: $black;
+  }
+
+  &__input-text {
+
+    &::placeholder {
+      @include text-medium;
+
+      line-height: 1.06;
+      color: $gray-charcoal-opacity-3;
+    }
+
+    &--phone {
+      &::placeholder {
+        @include text-large;
+
+        line-height: 0.95;
+      }
+    }
+  }
+
+  &__required-input-text {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 
   &__input-container {
     position: relative;
