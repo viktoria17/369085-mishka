@@ -1,0 +1,61 @@
+.form {
+  @include horizontal-paddings;
+}
+
+.form__title {
+  @include title-green;
+
+  line-height: 0.94;
+}
+
+.form__label {
+  @include text-medium--bold;
+
+  line-height: 1.06;
+  color: $black;
+}
+
+.form__input-text {
+  &::placeholder {
+    @include text-medium;
+
+    line-height: 1.06;
+    color: $gray-charcoal-opacity-3;
+  }
+
+  &--phone {
+    &::placeholder {
+      @include text-large;
+
+      line-height: 0.95;
+    }
+  }
+}
+
+.form__required-input-text {
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.form__input-container {
+  position: relative;
+}
+
+.form__input-icon {
+  @include icon(center);
+
+  left: 100px;
+  position: absolute;
+
+  &--phone {
+    background-image: url("../../img/icon-phone.svg");
+    height: 24px;
+    width: 25px;
+  }
+
+  &--email {
+    background-image: url("../../img/icon-mail.svg");
+    height: 21px;
+    width: 32px;
+  }
+}

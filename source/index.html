@@ -3,37 +3,45 @@
 
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
     <title>HTML Academy: Мишка</title>
   </head>
 
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Магазин «Мишка»">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть Меню</button>
+        <button class="main-nav__toggle  main-nav__toggle--open  main-nav__toggle--close" type="button"></button>
       </nav>
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
+      <div class="page-main__background  page-main__background--image">
+        <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
+      </div>
 
       <section class="catalog-sections">
         <h2 class="visually-hidden">Разделы каталога</h2>
 
-        <a class="catalog-section" href="catalog.html">
-          <h3 class="catalog-section__title">Предметы интерьера</h3>
-          <img cclass="catalog-section__image  catalog-section__image--interior" src="http://placehold.it/86==40x62"
-            width="40" height="62" alt="Предметы интерьера">
-        </a>
+        <div class="catalog-section catalog-section--light-bg">
+          <a class="catalog-section__link" href="catalog.html">
+            <h3 class="catalog-section__title">Предметы интерьера</h3>
+            <img class="catalog-section__image  catalog-section__image--interior" src="img/icon-interior.svg" width="40"
+              height="62" alt="Предметы интерьера">
+          </a>
+        </div>
 
-        <a class="catalog-section" href="catalog.html">
-          <h3 class="catalog-section__title">Детские игрушки</h3>
-          <img cclass="catalog-section__image  catalog-section__image--toy" src="http://placehold.it/86==60x60" width="60"
-            height="60" alt="Детские игрушки">
-        </a>
+        <div class="catalog-section catalog-section--dark-bg">
+          <a class="catalog-section__link" href="catalog.html">
+            <h3 class="catalog-section__title">Детские игрушки</h3>
+            <img cclass="catalog-section__image  catalog-section__image--toy" src="img/icon-toy.svg" width="60" height="60"
+              alt="Детские игрушки">
+          </a>
+        </div>
       </section>
 
       <section class="popular-item">
@@ -64,7 +72,7 @@
             </table>
           </div>
 
-          <img class="popular-item__image" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки»">
+          <img class="popular-item__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки»">
 
           <footer class="popular-item__footer">
             <p class="popular-item__price">Цена: 990 руб.</p>
@@ -82,32 +90,32 @@
           <ul class="about-us__list">
             <li class="about-us__item">
               <div class="about-us__icon  about-us__icon--ecology"></div>
-              <h3 class="about-us__title">Экологически чистые материалы</h3>
+              <h3 class="about-us__subtitle">Экологически чистые материалы</h3>
             </li>
 
             <li class="about-us__item">
               <div class="about-us__icon  about-us__icon--style"></div>
-              <h3 class="about-us__title">Скандинавский стиль по российской цене</h3>
+              <h3 class="about-us__subtitle">Скандинавский стиль по российской цене</h3>
             </li>
 
             <li class="about-us__item">
               <div class="about-us__icon  about-us__icon--like"></div>
-              <h3 class="about-us__title">Увеличивает лайки на фотографиях</h3>
+              <h3 class="about-us__subtitle">Увеличивает лайки на фотографиях</h3>
             </li>
 
             <li class="about-us__item">
               <div class="about-us__icon  about-us__icon--thread"></div>
-              <h3 class="about-us__title">Связано вручную с любовью и умилением</h3>
+              <h3 class="about-us__subtitle">Связано вручную с любовью и умилением</h3>
             </li>
 
             <li class="about-us__item">
               <div class="about-us__icon  about-us__icon--rocket"></div>
-              <h3 class="about-us__title">Поддержка отечественного производителя</h3>
+              <h3 class="about-us__subtitle">Поддержка отечественного производителя</h3>
             </li>
 
             <li class="about-us__item">
               <div class="about-us__icon  about-us__icon--gift"></div>
-              <h3 class="about-us__title">Поставляется в подарочной упаковке</h3>
+              <h3 class="about-us__subtitle">Поставляется в подарочной упаковке</h3>
             </li>
           </ul>
         </div>
@@ -157,8 +165,12 @@
               </div>
             </blockquote>
 
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+            <button class="reviews__button" type="button">
+              <div class="reviews__button-icon reviews__button-icon--prev"></div>
+            </button>
+            <button class="reviews__button" type="button">
+              <div class="reviews__button-icon reviews__button-icon--next"></div>
+            </button>
             <button class="reviews__write  button" type="button">Написать</button>
           </div>
         </div>
@@ -168,56 +180,51 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__contacts  contacts">
-          <h3 class="contacts__title">Контакты</h3>
+      <div class="page-footer__contacts-wrapper  contacts">
+        <h3 class="contacts__title">Контакты</h3>
 
-          <table class="contacts__list">
-            <tr>
-              <td class="contacts__field">e-mail</td>
-              <td class="contacts__value">info@mimimishkashop.ru</td>
-            </tr>
-            <tr>
-              <td class="contacts__field">адрес</td>
-              <td class="contacts__value"> г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-            </tr>
-          </table>
+        <table class="contacts__list">
+          <tr>
+            <td class="contacts__field">e-mail</td>
+            <td class="contacts__value">info@mimimishkashop.ru</td>
+          </tr>
+          <tr>
+            <td class="contacts__field">адрес</td>
+            <td class="contacts__value"> г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="page-footer__map-wrapper  map">
+        <img class="map__image" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта">
+      </div>
+
+      <div class="page-footer__write-wrapper">
+        <button class="button" type="button">Напишите нам</button>
+      </div>
+
+      <div class="page-footer__bottom-block-wrapper">
+        <div class="page-footer__social  social">
+          <ul class="social__list">
+            <li class="social__item social__item--instagram">
+              <a class="social__link" href="https://www.instagram.com/htmlacademy" target="_blank" rel="nofollow noopener"></a>
+            </li>
+
+            <li class="social__item social__item--facebook">
+              <a class="social__link" href="https://www.facebook.com/htmlacademy" target="_blank" rel="nofollow noopener"></a>
+            </li>
+
+            <li class="social__item social__item--twitter">
+              <a class="social__link" href="https://twitter.com/htmlacademy" target="_blank" rel="nofollow noopener">
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <div class="page-footer__map  map">
-          <img class="map__image" src="http://placehold.it/320x457" width="320" height="457" alt="Карта">
-        </div>
-
-        <div class="page-footer__write">
-          <button class="button" type="button">Напишите нам</button>
-        </div>
-
-        <div class="page-footer__bottom-block">
-          <div class="page-footer__social  social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link  social__link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank"
-                  rel="nofollow noopener">Мы в Инстаграме</a>
-              </li>
-
-              <li class="social__item">
-                <a class="social__link  social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank"
-                  rel="nofollow noopener">Мы в Фейсбуке</a>
-              </li>
-
-              <li class="social__item">
-                <a class="social__link  social__link--twitter" href="https://twitter.com/htmlacademy" target="_blank" rel="nofollow noopener">
-                  Мы в Твиттере
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано</b>
-            <a class="copyright__icon" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
-              HTML Academy
-            </a>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <div class="copyright__icon">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener"></a>
           </div>
         </div>
       </div>

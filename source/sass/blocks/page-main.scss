@@ -1,0 +1,25 @@
+.page-main__title {
+  margin-top: 0;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.11;
+  color: $black;
+}
+
+.page-main__title-wrapper {
+  @include horizontal-paddings;
+
+  background-color: $white-ghost;
+}
+
+.page-main__background {
+  background-color: $white-ghost;
+  height: 177px;
+
+  &--image {
+    @include icon(center);
+
+    background-image: url("../../img/hero-mobile@1x.jpg");
+    height: 278px;
+  }
+}

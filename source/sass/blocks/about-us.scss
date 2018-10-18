@@ -1,0 +1,56 @@
+.about-us__wrapper {
+  @include horizontal-paddings;
+}
+
+.about-us__title {
+  @include section-title;
+
+  text-transform: uppercase;
+}
+
+.about-us__subtitle {
+  @include text-medium--bold;
+
+  line-height: 1.18;
+  color: $black;
+}
+
+.about-us__icon {
+  @include icon(center);
+
+  &--ecology {
+    background-image: url("../../img/icon-feature-flower.svg");
+    height: 37px;
+    width: 32px;
+  }
+
+  &--style {
+    background-image: url("../../img/icon-feature-money.svg");
+    height: 27px;
+    width: 47px;
+  }
+
+  &--like {
+    background-image: url("../../img/icon-feature-heart.svg");
+    height: 27px;
+    width: 34px;
+  }
+
+  &--thread {
+    background-image: url("../../img/icon-feature-ball.svg");
+    height: 34px;
+    width: 35px;
+  }
+
+  &--rocket {
+    background-image: url("../../img/icon-feature-rocket.svg");
+    height: 23px;
+    width: 55px;
+  }
+
+  &--gift {
+    background-image: url("../../img/icon-feature-gift.svg");
+    height: 32px;
+    width: 33px;
+  }
+}

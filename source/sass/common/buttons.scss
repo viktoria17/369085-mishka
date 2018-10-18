@@ -1,0 +1,6 @@
+.button {
+  @include text-medium--bold;
+
+  line-height: 1.18;
+  text-transform: uppercase;
+}

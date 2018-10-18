@@ -1,0 +1,19 @@
+@mixin icon($position) {
+  background-position: $position;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin horizontal-paddings {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+@mixin vertical-paddings {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.visually-hidden {
+  display: none;
+}

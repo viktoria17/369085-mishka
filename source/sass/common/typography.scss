@@ -1,0 +1,42 @@
+@mixin section-title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $black;
+}
+
+@mixin text-extra-small {
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+@mixin text-small {
+  font-size: 15px;
+}
+
+@mixin text-medium {
+  font-size: 17px;
+}
+
+@mixin text-medium--bold {
+  @include text-medium;
+
+  font-weight: 700;
+}
+
+@mixin text-large {
+  font-size: 19px;
+}
+
+@mixin text-large--bold {
+  @include text-large;
+
+  font-weight: 700;
+}
+
+@mixin title-green {
+  @include text-medium--bold;
+
+  text-transform: uppercase;
+  color: $green-downy;
+}

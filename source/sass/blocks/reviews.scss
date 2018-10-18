@@ -1,0 +1,44 @@
+.reviews__wrapper {
+  @include horizontal-paddings;
+}
+
+.reviews__item {
+  margin-left: 0;
+}
+
+.reviews__title {
+  @include section-title;
+}
+
+.reviews__text {
+  @include text-small;
+
+  line-height: 2;
+}
+
+.reviews__author-name {
+  @include text-medium--bold;
+
+  line-height: 1.41;
+  color: $black;
+  font-style: normal;
+}
+
+.reviews__author-instagram {
+  line-height: 1.76;
+}
+
+.reviews__button-icon {
+  @include icon(center);
+
+  height: 26px;
+  width: 50px;
+
+  &--prev {
+    background-image: url("../../img/icon-left-arrow.svg");
+  }
+
+  &--next {
+    background-image: url("../../img/icon-right-arrow.svg");
+  }
+}

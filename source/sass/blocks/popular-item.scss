@@ -1,0 +1,35 @@
+.popular-item {
+  &--light-bg {
+    background-color: $green-downy;
+  }
+}
+
+.popular-item__wrapper {
+  @include horizontal-paddings;
+}
+
+.popular-item__title {
+  @include section-title;
+}
+
+.popular-item__label {
+  @include title-green;
+
+  line-height: 1.18;
+}
+
+.popular-item__parameters {
+  @include text-small;
+
+  line-height: 1.33;
+}
+
+.popular-item__description {
+  line-height: 1.6;
+}
+
+.popular-item__price {
+  @include text-medium--bold;
+
+  line-height: 1.41;
+}

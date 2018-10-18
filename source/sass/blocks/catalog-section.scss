@@ -1,0 +1,19 @@
+.catalog-section {
+  @include horizontal-paddings;
+
+  &--light-bg {
+    background-color: $green-downy;
+  }
+
+  &--dark-bg {
+    background-color: $green-puerto-rico;
+  }
+}
+
+.catalog-section__title {
+  @include text-large--bold;
+
+  margin-top: 0;
+  line-height: 1.26;
+  color: $white-snow;
+}
