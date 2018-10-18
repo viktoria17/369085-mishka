@@ -5,7 +5,7 @@
 .post__video-icon {
   @include icon(center);
 
-  background-image: url("../img/icon-video.svg");
+  background-image: url("../../img/icon-video.svg");
   height: 22px;
   width: 32px;
 }
@@ -13,7 +13,7 @@
 .post__video-image {
   @include icon(center);
 
-  background-image: url("../img/video-mobile@1x.jpg");
+  background-image: url("../../img/video-mobile@1x.jpg");
   height: 150px;
   width: 260px;
 }
@@ -21,7 +21,7 @@
 .post__video-btn {
   @include icon(center);
 
-  background-image: url("../img/icon-play.svg");
+  background-image: url("../../img/icon-play.svg");
   height: 77px;
   width: 101px;
 }
