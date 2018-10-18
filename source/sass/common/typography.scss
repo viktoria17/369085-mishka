@@ -1,23 +1,21 @@
-@import "colors.scss";
-
 @mixin section-title {
-  font-size: 1.5625rem;
+  font-size: 25px;
   font-weight: 700;
   line-height: 1.2;
   color: $black;
 }
 
 @mixin text-extra-small {
-  font-size: 0.8125rem;
+  font-size: 13px;
   line-height: 1.85;
 }
 
 @mixin text-small {
-  font-size: 0.9375rem;
+  font-size: 15px;
 }
 
 @mixin text-medium {
-  font-size: 1.0625rem;
+  font-size: 17px;
 }
 
 @mixin text-medium--bold {
@@ -27,7 +25,7 @@
 }
 
 @mixin text-large {
-  font-size: 1.1875rem;
+  font-size: 19px;
 }
 
 @mixin text-large--bold {

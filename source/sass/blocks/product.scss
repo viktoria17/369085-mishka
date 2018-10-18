@@ -1,6 +1,3 @@
-@import "helpers.scss";
-@import "typography.scss";
-
 .product {
   &__name {
     @include text-medium--bold;

@@ -1,6 +1,3 @@
-@import "helpers.scss";
-@import "typography.scss";
-
 .copyright {
   &__text {
     @include text-large--bold;
