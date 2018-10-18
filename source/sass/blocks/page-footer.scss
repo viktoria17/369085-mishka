@@ -1,13 +1,11 @@
-.page-footer {
-  &__contacts-wrapper,
-  &__write-wrapper,
-  &__bottom-block-wrapper {
-    @include horizontal-paddings;
-  }
+.page-footer__contacts-wrapper,
+.page-footer__write-wrapper,
+.page-footer__bottom-block-wrapper {
+  @include horizontal-paddings;
+}
 
-  &__bottom-block-wrapper {
-    @include vertical-paddings;
+.page-footer__bottom-block-wrapper {
+  @include vertical-paddings;
 
-    background-color: $white-ghost;
-  }
+  background-color: $white-ghost;
 }

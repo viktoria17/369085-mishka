@@ -1,16 +1,14 @@
-.copyright {
-  &__text {
-    @include text-large--bold;
+.copyright__text {
+  @include text-large--bold;
 
-    line-height: 0.95;
-    color: $black;
-  }
+  line-height: 0.95;
+  color: $black;
+}
 
-  &__icon {
-    @include icon(center);
+.copyright__icon {
+  @include icon(center);
 
-    height: 34px;
-    width: 27px;
-    background-image: url("../img/htmlacademy.svg");
-  }
+  height: 34px;
+  width: 27px;
+  background-image: url("../img/htmlacademy.svg");
 }

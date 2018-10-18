@@ -1,33 +1,31 @@
-.post {
-  &__wrapper {
-    @include horizontal-paddings;
-  }
+.post__wrapper {
+  @include horizontal-paddings;
+}
 
-  &__video-icon {
-    @include icon(center);
+.post__video-icon {
+  @include icon(center);
 
-    background-image: url("../img/icon-video.svg");
-    height: 22px;
-    width: 32px;
-  }
+  background-image: url("../img/icon-video.svg");
+  height: 22px;
+  width: 32px;
+}
 
-  &__video-image {
-    @include icon(center);
+.post__video-image {
+  @include icon(center);
 
-    background-image: url("../img/video-mobile@1x.jpg");
-    height: 150px;
-    width: 260px;
-  }
+  background-image: url("../img/video-mobile@1x.jpg");
+  height: 150px;
+  width: 260px;
+}
 
-  &__video-btn {
-    @include icon(center);
+.post__video-btn {
+  @include icon(center);
 
-    background-image: url("../img/icon-play.svg");
-    height: 77px;
-    width: 101px;
-  }
+  background-image: url("../img/icon-play.svg");
+  height: 77px;
+  width: 101px;
+}
 
-  &__text {
-    @include text-extra-small;
-  }
+.post__text {
+  @include text-extra-small;
 }

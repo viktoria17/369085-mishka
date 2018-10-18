@@ -1,5 +1,3 @@
-.catalog {
-  &__wrapper {
-    @include horizontal-paddings;
-  }
+.catalog__wrapper {
+  @include horizontal-paddings;
 }

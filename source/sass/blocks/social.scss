@@ -1,23 +1,21 @@
-.social {
-  &__item {
-    @include icon(center);
+.social__item {
+  @include icon(center);
 
-    &--instagram {
-      height: 21px;
-      width: 22px;
-      background-image: url("../img/icon-insta.svg");
-    }
+  &--instagram {
+    height: 21px;
+    width: 22px;
+    background-image: url("../img/icon-insta.svg");
+  }
 
-    &--facebook {
-      height: 28px;
-      width: 15px;
-      background-image: url("../img/icon-fb.svg");
-    }
+  &--facebook {
+    height: 28px;
+     width: 15px;
+     background-image: url("../img/icon-fb.svg");
+  }
 
-    &--twitter {
-      height: 20px;
-      width: 23px;
-      background-image: url("../img/icon-twitter.svg");
-    }
+  &--twitter {
+    height: 20px;
+    width: 23px;
+    background-image: url("../img/icon-twitter.svg");
   }
 }

@@ -1,7 +1,7 @@
 .form-inner {
   @include horizontal-paddings;
+}
 
-  &__text {
-    @include text-extra-small;
-  }
+.form-inner__text {
+  @include text-extra-small;
 }
