@@ -9,11 +9,24 @@
   padding-left: 30px;
 }
 
-@mixin vertical-paddings {
+@mixin vertical-paddings-30 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
+@mixin vertical-paddings-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .visually-hidden {
   display: none;
+}
+
+.section-separator {
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-image: url(../../img/bg-zigzag-line.svg);
+  height: 6px;
 }

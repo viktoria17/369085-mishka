@@ -1,5 +1,8 @@
 .reviews__wrapper {
   @include horizontal-paddings;
+
+  padding-top: 30px;
+  padding-bottom: 45px;
 }
 
 .reviews__item {
@@ -8,11 +11,15 @@
 
 .reviews__title {
   @include section-title;
+
+  margin: 0;
 }
 
 .reviews__text {
   @include text-small;
 
+  margin-top: 38px;
+  margin-bottom: 40px;
   line-height: 2;
 }
 
@@ -26,6 +33,18 @@
 
 .reviews__author-instagram {
   line-height: 1.76;
+}
+
+.reviews__buttons-container {
+  display: flex;
+  margin-top: 36px;
+  margin-bottom: 38px;
+}
+
+.reviews__button {
+  padding: 12px 42px 12px 37px;
+  width: 100%;
+  border: solid 1px #ececec;
 }
 
 .reviews__button-icon {
