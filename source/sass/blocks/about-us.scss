@@ -1,16 +1,27 @@
 .about-us__wrapper {
   @include horizontal-paddings;
+  @include vertical-paddings-30;
 }
 
 .about-us__title {
   @include section-title;
 
-  text-transform: uppercase;
+  margin: 0;
+}
+
+.about-us__list {
+  padding-left: 8px;
+}
+
+.about-us__item {
+  margin-top: 30px;
+  list-style: none;
 }
 
 .about-us__subtitle {
   @include text-medium--bold;
 
+  margin-top: 20px;
   line-height: 1.18;
   color: $black;
 }

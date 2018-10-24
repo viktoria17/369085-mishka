@@ -6,15 +6,25 @@
 
 .popular-item__wrapper {
   @include horizontal-paddings;
+
+  padding-top: 34px;
+  padding-bottom: 36px;
+}
+
+.popular-item__header {
+  margin-bottom: 30px;
 }
 
 .popular-item__title {
   @include section-title;
+
+  margin: 0 0 8px 0;
 }
 
 .popular-item__label {
   @include title-green;
 
+  margin: 0;
   line-height: 1.18;
 }
 
@@ -28,8 +38,27 @@
   line-height: 1.6;
 }
 
+.popular-item__list {
+  margin-top: 34px;
+  margin-bottom: 28px;
+}
+
+.popular-item__image {
+  margin: 0 auto;
+  background-image: url("../../img/triple-set-mobile@1x.jpg");
+  height: 315px;
+  width: 260px;
+}
+
 .popular-item__price {
   @include text-medium--bold;
 
+  margin: 29px 0 28px 0;
   line-height: 1.41;
+}
+
+.popular-item__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

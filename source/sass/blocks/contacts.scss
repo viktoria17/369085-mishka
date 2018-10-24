@@ -1,6 +1,27 @@
 .contacts__title {
+  margin: 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.67;
   color: $black;
+}
+
+.contacts__list {
+  margin: 42px 0;
+}
+
+.contacts__column {
+  display: flex;
+  margin-top: 25px;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.contacts__field {
+  padding-right: 32px;
+}
+
+.contacts__value {
+  max-width: 178px;
+  text-align: left;
 }

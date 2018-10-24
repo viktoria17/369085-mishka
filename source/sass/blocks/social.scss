@@ -1,5 +1,14 @@
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .social__item {
   @include icon(center);
+
+  margin-right: 20px;
+  margin-left: 20px;
 
   &--instagram {
     height: 21px;

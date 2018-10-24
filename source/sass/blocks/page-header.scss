@@ -1,4 +1,14 @@
 .page-header {
   @include horizontal-paddings;
-  @include vertical-paddings;
+  @include vertical-paddings-20;
+
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
 }

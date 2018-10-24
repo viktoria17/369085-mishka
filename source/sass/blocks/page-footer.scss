@@ -1,11 +1,34 @@
 .page-footer__contacts-wrapper,
-.page-footer__write-wrapper,
-.page-footer__bottom-block-wrapper {
+.page-footer__write-wrapper {
   @include horizontal-paddings;
 }
 
+.page-footer {
+  padding-top: 44px;
+}
+
+.page-footer__contacts-wrapper{
+  padding-bottom: 42px;
+}
+
+.page-footer__map-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__write-wrapper {
+  margin-top: 39px;
+  margin-bottom: 39px;
+}
+
 .page-footer__bottom-block-wrapper {
-  @include vertical-paddings;
+  @include vertical-paddings-20;
+  @include horizontal-paddings;
 
   background-color: $white-ghost;
+}
+
+.page-footer__separator {
+  margin: 30px;
+  border: solid 1px $gray-charcoal-opacity-1;
 }

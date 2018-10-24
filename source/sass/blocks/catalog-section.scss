@@ -10,10 +10,30 @@
   }
 }
 
+.catalog-section__image {
+  &--interior {
+    position: absolute;
+    right: 37px;
+  }
+
+  &--toy {
+    position: absolute;
+    right: 28px;
+  }
+}
+
+.catalog-section__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
 .catalog-section__title {
   @include text-large--bold;
+  @include vertical-paddings-30;
 
-  margin-top: 0;
+  margin: 0;
   line-height: 1.26;
   color: $white-snow;
 }
