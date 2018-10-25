@@ -1,21 +1,44 @@
-.post__wrapper {
+.post {
   @include horizontal-paddings;
+}
+
+.post__wrapper {
+  border: solid 1px $gray-whisper;
+}
+
+.post__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 43px 26px 34px;
 }
 
 .post__video-icon {
   @include icon(center);
 
+  margin-right: 25px;
   background-image: url("../../img/icon-video.svg");
   height: 22px;
   width: 32px;
 }
 
-.post__video-image {
-  @include icon(center);
+.post__title {
+  @include text-medium--bold;
 
-  background-image: url("../../img/video-mobile@1x.jpg");
+  margin: 0;
+  line-height: 1.41;
+  color: $black;
+}
+
+.post__video-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 150px;
-  width: 260px;
+  background-color: $white-ghost;
+  background-image: url("../../img/video-mobile@1x.jpg");
 }
 
 .post__video-btn {
@@ -28,4 +51,11 @@
 
 .post__text {
   @include text-extra-small;
+
+  margin-bottom: 29px;
+  text-align: left;
+}
+
+.post__text-wrapper {
+  padding: 30px 43px 33px 34px;
 }

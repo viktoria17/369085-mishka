@@ -7,7 +7,7 @@
   padding-top: 44px;
 }
 
-.page-footer__contacts-wrapper{
+.page-footer__contacts-wrapper {
   padding-bottom: 42px;
 }
 
@@ -26,9 +26,4 @@
   @include horizontal-paddings;
 
   background-color: $white-ghost;
-}
-
-.page-footer__separator {
-  margin: 30px;
-  border: solid 1px $gray-charcoal-opacity-1;
 }
