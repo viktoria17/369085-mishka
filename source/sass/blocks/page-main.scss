@@ -24,7 +24,6 @@
 }
 
 .page-main__title-wrapper {
-  @include horizontal-paddings;
-
+  padding: 76px 42px 74px 42px;
   background-color: $white-ghost;
 }

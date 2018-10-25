@@ -1,3 +1,9 @@
+.product {
+  margin-top: 30px;
+  border: solid 1px $gray-whisper;
+  background-color: $white-snow;
+}
+
 .product__name {
   @include text-medium--bold;
 
@@ -7,6 +13,32 @@
 .product__link {
   color: $black;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.product__image {
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 195px;
+  background-color: $white-ghost;
+
+  &--hare {
+    background-image: url("../../img/photo-hare-mobile@1x.jpg");
+  }
+
+  &--bowl {
+    background-image: url("../../img/photo-bowl-mobile@1x.jpg");
+  }
+
+  &--toys {
+    background-image: url("../../img/photo-toys-mobile@1x.jpg");
+  }
+}
+
+.product__info-wrapper {
+  padding: 30px 28px;
 }
 
 .product__size {
@@ -19,6 +51,12 @@
   line-height: 1.6;
   font-weight: 700;
   color: $black;
+}
+
+.product__add-to-cart-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .product__cart-icon {
