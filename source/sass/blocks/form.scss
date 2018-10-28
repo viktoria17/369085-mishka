@@ -10,9 +10,12 @@
   }
 }
 
-.form_section {
+.form__fieldset {
   display: flex;
-  margin-top: 34px;
+  margin: 34px 0 0 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
 }
 
 .form__title-wrapper {
