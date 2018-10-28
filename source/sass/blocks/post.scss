@@ -17,7 +17,7 @@
   @include icon(center);
 
   margin-right: 25px;
-  background-image: url("../../img/icon-video.svg");
+  background-image: url("/img/icon-video.svg");
   height: 22px;
   width: 32px;
 }
@@ -38,13 +38,13 @@
   background-repeat: no-repeat;
   height: 150px;
   background-color: $white-ghost;
-  background-image: url("../../img/video-mobile@1x.jpg");
+  background-image: url("/img/video-mobile@1x.jpg");
 }
 
 .post__video-btn {
   @include icon(center);
 
-  background-image: url("../../img/icon-play.svg");
+  background-image: url("/img/icon-play.svg");
   height: 77px;
   width: 101px;
 }

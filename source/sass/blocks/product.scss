@@ -24,15 +24,15 @@
   background-color: $white-ghost;
 
   &--hare {
-    background-image: url("../../img/photo-hare-mobile@1x.jpg");
+    background-image: url("/img/photo-hare-mobile@1x.jpg");
   }
 
   &--bowl {
-    background-image: url("../../img/photo-bowl-mobile@1x.jpg");
+    background-image: url("/img/photo-bowl-mobile@1x.jpg");
   }
 
   &--toys {
-    background-image: url("../../img/photo-toys-mobile@1x.jpg");
+    background-image: url("/img/photo-toys-mobile@1x.jpg");
   }
 }
 
@@ -61,7 +61,7 @@
 .product__cart {
   @include icon(center);
 
-  background-image: url("../../img/icon-cart.svg");
+  background-image: url("/img/icon-cart.svg");
   height: 19px;
   width: 20px;
   cursor: pointer;
