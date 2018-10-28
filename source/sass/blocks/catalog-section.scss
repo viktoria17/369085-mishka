@@ -11,13 +11,13 @@
 }
 
 .catalog-section__image {
+  position: absolute;
+
   &--interior {
-    position: absolute;
     right: 37px;
   }
 
   &--toy {
-    position: absolute;
     right: 28px;
   }
 }
